@@ -1,15 +1,8 @@
 # webargs-sanic
-[Sanic](https://github.com/huge-success/sanic) integration with [Webargs](https://github.com/sloria/webargs). 
 
 Parsing and validating request arguments: headers, arguments, cookies, files, json, etc.
 
 IMPORTANT: From version 2.0.0 webargs-sanic requires you to have webargs >=7.0.1. Please be aware of changes happened in version of webargs > 6.0.0. If you need support of webargs 5.x with no location definition, please use previous version(1.5.0) of this module from pypi. 
-
-[![Build Status](https://img.shields.io/travis/EndurantDevs/webargs-sanic.svg?logo=travis)](https://app.travis-ci.com/EndurantDevs/webargs-sanic) [![Latest Version](https://img.shields.io/pypi/v/webargs-sanic.svg)](https://pypi.python.org/pypi/webargs-sanic/) [![Python Versions](https://img.shields.io/pypi/pyversions/webargs-sanic.svg)](https://github.com/EndurantDevs/webargs-sanic/blob/master/setup.py) [![Tests Coverage](https://img.shields.io/codecov/c/github/EndurantDevs/webargs-sanic/master.svg)](https://codecov.io/gh/EndurantDevs/webargs-sanic)
-
-[webargs](https://github.com/sloria/webargs) is a Python library for parsing and validating HTTP request arguments, with built-in support for popular web frameworks. webargs-sanic allows you to use it for [Sanic](https://github.com/huge-success/sanic) apps. To read more about webargs usage, please check [Quickstart](https://webargs.readthedocs.io/en/latest/quickstart.html)
-
-## Example Code ##
 
 ### Simple Application ###
 ```python
@@ -167,8 +160,7 @@ python setup.py install
 
 ## Running the tests
 
-Project uses common tests from webargs package. Thanks to [Steven Loria](https://github.com/sloria) for [sharing tests in webargs v4.1.0](https://github.com/sloria/webargs/pull/287#issuecomment-422232384). 
-Most of tests are run by webtest via [webtest-sanic](https://github.com/EndurantDevs/webtest-sanic). 
+Project uses common tests from webargs package. 
 Some own tests get run via Sanic's TestClient.
 
 To be sure everything is fine before installation from sources, just run:
@@ -183,11 +175,6 @@ Or
 ```bash
 pytest tests/
 ```
-
-
-## Authors
-[<img src="https://github.com/EndurantDevs/botstat-seo/raw/master/docs/img/EndurantDevs-big.png" alt="Endurant Developers Python Team" width="150">](https://www.EndurantDev.com)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
